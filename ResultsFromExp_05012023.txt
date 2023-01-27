@@ -1,0 +1,68 @@
+============================= Updated version of torch and torchvision ============================
+============================= torch==1.13.0cu117, torchvision==0.14.0cu117, tensorflow==2.11.0 =====
+
+
+CraiClassifier_v1.pth :95.80% (latest weights)
+
+
+Training set : 50%
+Validation Set : 20%
+Test : 30%
+manual_seed (101)
+torch.cuda.manual_seed(101)
+
+usage: python v6_2.py --epochs=100 --learning_rate=0.0009 --p=0.028 --hidden_units=9000 
+
+classes = DSC, FLAIR,T1, T1ce, T2
+
+
+Test Accuracy: 0.9580811262130737
+
+[[759   0   0   0   0]
+ [  0 285   7  13   7]
+ [  0   9 255   8   7]
+ [  0   4  10 232   3]
+ [  0   4   6   1 274]]
+
+Precision score classwise is : [1.         0.94370861 0.91726619 0.91338583 0.94158076]
+
+Recall classwise is :  [1.         0.91346154 0.91397849 0.93172691 0.96140351]
+
+Accuracy score is : 0.9580679405520169
+
+F1 score classwise is  : [1.         0.92833876 0.91561939 0.92246521 0.95138889]
+
+----------------------------------------------------------------------------------------------------
+
+CraiClassifier_v2.pth :latest weights
+
+
+Training set : 50%
+Validation Set : 20%
+Test : 30%
+manual_seed (101)
+torch.cuda.manual_seed(101)
+
+usage: python v7_2.py --epochs=100 --learning_rate=0.0012 --p=0.12 --hidden_units=9000 
+
+classes = DSC, FLAIR,T1, T1ce, T2
+
+
+Test Accuracy: 0.94921875
+
+[[505   0   0   0   0]
+ [  0 192   8   3   5]
+ [  0   8 159  11   8]
+ [  0   8   7 147   4]
+ [  0   0   2   1 187]]
+Precision score classwise is : [1.         0.92307692 0.90340909 0.90740741 0.91666667]
+
+Recall classwise is :[1.         0.92307692 0.85483871 0.88554217 0.98421053]
+
+Accuracy classwise is : 0.9482071713147411
+
+F1 score classwise is : [1.         0.92307692 0.87845304 0.89634146 0.94923858]
+
+
+
+
