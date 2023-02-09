@@ -1,6 +1,8 @@
 # BrainMRI_PulseSeqType_Classifier
 Classifies DICOM and JPG images into DSC, FLAIR, T1, T1ce, T2 classes. Can be used where the information regarding the images has been stripped off.
 
+Contact me for the binary model file manish_kakar@hotmail.com
+
 USAGE:
 1) Download everything in one directory
 2) Install libraries : pip install -r requirements.txt
